@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>OCR_PDF.Modules.ModuleName</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OCR_PDF.Core\OCR_PDF.Core.csproj" />
+    <ProjectReference Include="..\..\Services\OCR_PDF.Services.Interfaces\OCR_PDF.Services.Interfaces.csproj" />
+  </ItemGroup>
+</Project>

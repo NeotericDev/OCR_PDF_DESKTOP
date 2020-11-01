@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Syncfusion.Compression.Portable">
+      <HintPath>C:\Users\Dev\Downloads\syncfusionocrprocessor\Assemblies\.NET Standard 2.0\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OCRProcessor.Portable">
+      <HintPath>C:\Users\Dev\Downloads\syncfusionocrprocessor\Assemblies\.NET Standard 2.0\Syncfusion.OCRProcessor.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Imaging.Portable">
+      <HintPath>C:\Users\Dev\Downloads\syncfusionocrprocessor\Assemblies\.NET Standard 2.0\Syncfusion.Pdf.Imaging.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Portable">
+      <HintPath>C:\Users\Dev\Downloads\syncfusionocrprocessor\Assemblies\.NET Standard 2.0\Syncfusion.Pdf.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

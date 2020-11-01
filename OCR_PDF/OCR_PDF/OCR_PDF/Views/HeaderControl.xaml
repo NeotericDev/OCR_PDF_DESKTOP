@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="OCR_PDF.Views.HeaderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sf="http://schemas.syncfusion.com/wpf"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="False"
+             xmlns:local="clr-namespace:OCR_PDF.Views" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" 
+             d:DesignHeight="75" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="2"></Button>
+        <sf:ButtonAdv Grid.Column="2" Command="{Binding StartProcessingCmd}" Label="Start OCRing" SmallIcon="pack://application:,,,/Resources/Images/icons8_ocr_52px_2.png">
+        
+        </sf:ButtonAdv>
+        <sf:ButtonAdv Grid.Column="3" Command="{Binding AddFileBtnCmd}" Label="Add New Entry" SmallIcon="pack://application:,,,/Resources/Images/icons8_new_copy_52px_1.png">
+            <!--<i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding AddFileBtnCmd}">
+                    --><!--<i:InvokeCommandAction Command="{Binding Path=AddTask, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type sf:ChromelessWindow}}}">--><!--
+
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>-->
+        </sf:ButtonAdv>
+        
+    </Grid>
+
+</UserControl>

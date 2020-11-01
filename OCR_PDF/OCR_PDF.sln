@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4313DE39-6D5B-422D-B1D5-090A92245C04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR_PDF.Modules.ModuleName.Tests", "OCR_PDF\Tests\OCR_PDF.Modules.ModuleName.Tests\OCR_PDF.Modules.ModuleName.Tests.csproj", "{53720C2C-CCFD-49C3-BECE-01903A8CFBCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{43BBDE5A-0181-4B04-B21F-D77D03AC120E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR_PDF.Modules.ModuleName", "OCR_PDF\Modules\OCR_PDF.Modules.ModuleName\OCR_PDF.Modules.ModuleName.csproj", "{21CC371C-991B-4131-A59A-7C79678D50D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{808AC049-6FDB-43D7-ADBC-5C63849191D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR_PDF.Services", "OCR_PDF\Services\OCR_PDF.Services\OCR_PDF.Services.csproj", "{9D9C88EE-CD23-4F7B-8865-562A43AD173D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR_PDF.Services.Interfaces", "OCR_PDF\Services\OCR_PDF.Services.Interfaces\OCR_PDF.Services.Interfaces.csproj", "{7B38BBCC-361E-4A56-B8B9-9E670052396E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR_PDF", "OCR_PDF\OCR_PDF\OCR_PDF.csproj", "{862986CE-09D0-4018-AD54-2D71496CA29D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR_PDF.Core", "OCR_PDF\OCR_PDF.Core\OCR_PDF.Core.csproj", "{A79EF337-F438-4808-B657-E0988BE05C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCRLib", "OCRLib\OCRLib.csproj", "{CC043BC0-AB04-4F4C-8BD5-FEBE501B471E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53720C2C-CCFD-49C3-BECE-01903A8CFBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53720C2C-CCFD-49C3-BECE-01903A8CFBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53720C2C-CCFD-49C3-BECE-01903A8CFBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53720C2C-CCFD-49C3-BECE-01903A8CFBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CC371C-991B-4131-A59A-7C79678D50D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CC371C-991B-4131-A59A-7C79678D50D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CC371C-991B-4131-A59A-7C79678D50D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CC371C-991B-4131-A59A-7C79678D50D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D9C88EE-CD23-4F7B-8865-562A43AD173D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9C88EE-CD23-4F7B-8865-562A43AD173D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9C88EE-CD23-4F7B-8865-562A43AD173D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9C88EE-CD23-4F7B-8865-562A43AD173D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B38BBCC-361E-4A56-B8B9-9E670052396E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B38BBCC-361E-4A56-B8B9-9E670052396E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B38BBCC-361E-4A56-B8B9-9E670052396E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B38BBCC-361E-4A56-B8B9-9E670052396E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862986CE-09D0-4018-AD54-2D71496CA29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862986CE-09D0-4018-AD54-2D71496CA29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862986CE-09D0-4018-AD54-2D71496CA29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862986CE-09D0-4018-AD54-2D71496CA29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A79EF337-F438-4808-B657-E0988BE05C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A79EF337-F438-4808-B657-E0988BE05C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A79EF337-F438-4808-B657-E0988BE05C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A79EF337-F438-4808-B657-E0988BE05C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC043BC0-AB04-4F4C-8BD5-FEBE501B471E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC043BC0-AB04-4F4C-8BD5-FEBE501B471E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC043BC0-AB04-4F4C-8BD5-FEBE501B471E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC043BC0-AB04-4F4C-8BD5-FEBE501B471E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53720C2C-CCFD-49C3-BECE-01903A8CFBCB} = {4313DE39-6D5B-422D-B1D5-090A92245C04}
+		{21CC371C-991B-4131-A59A-7C79678D50D3} = {43BBDE5A-0181-4B04-B21F-D77D03AC120E}
+		{9D9C88EE-CD23-4F7B-8865-562A43AD173D} = {808AC049-6FDB-43D7-ADBC-5C63849191D6}
+		{7B38BBCC-361E-4A56-B8B9-9E670052396E} = {808AC049-6FDB-43D7-ADBC-5C63849191D6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {406DAC08-9A38-4937-A800-6013C3A0297A}
+	EndGlobalSection
+EndGlobal

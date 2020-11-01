@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="OCR_PDF.Views.MainContentControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OCR_PDF.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:sf="http://schemas.syncfusion.com/wpf"
+             xmlns:core="clr-namespace:OCR_PDF.Core;assembly=OCR_PDF.Core"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             prism:ViewModelLocator.AutoWireViewModel="False"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <sf:ButtonAdv MinWidth="100px" Padding="10,10,10,10" Command="{Binding ChooseFolderCmd}" Label="Select Output Folder" SmallIcon="pack://application:,,,/Resources/Images/icons8_opened_folder_26px.png"></sf:ButtonAdv>
+                <TextBox  Margin="5,0,0,0" MinWidth="300px" IsEnabled="False" Text="{Binding OutputFolder}"/>
+            </StackPanel>            
+            <ScrollViewer Grid.Row="1">
+                <ItemsControl  VirtualizingPanel.IsVirtualizing="True" ItemsSource="{Binding Tasks}" Margin="0" Padding="0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <local:TaskControl RemoveTask="TaskControl_RemoveTask">
+                            </local:TaskControl>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+                
+    </Grid>
+</UserControl>
